@@ -232,6 +232,7 @@ if ( $continueProcessing -eq $true )
         Import-PfxCertificate -CertStoreLocation $certificateStore `
                 -Password $CertificateSecurePassword `
                 -FilePath $certificateFilePath `
+                -Exportable `
                 -ErrorAction Stop |
             Out-Null
 
